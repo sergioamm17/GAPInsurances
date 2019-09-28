@@ -1,0 +1,14 @@
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\bin\Debug\netcoreapp2.2\GAPInsuranceAPI.deps.json
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\bin\Debug\netcoreapp2.2\GAPInsuranceAPI.runtimeconfig.json
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\bin\Debug\netcoreapp2.2\GAPInsuranceAPI.runtimeconfig.dev.json
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\bin\Debug\netcoreapp2.2\GAPInsuranceAPI.dll
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\bin\Debug\netcoreapp2.2\GAPInsuranceAPI.pdb
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.csprojAssemblyReference.cache
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.csproj.CoreCompileInputs.cache
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.RazorAssemblyInfo.cache
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.RazorAssemblyInfo.cs
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.AssemblyInfoInputs.cache
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.AssemblyInfo.cs
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.RazorTargetAssemblyInfo.cache
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.dll
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.pdb
