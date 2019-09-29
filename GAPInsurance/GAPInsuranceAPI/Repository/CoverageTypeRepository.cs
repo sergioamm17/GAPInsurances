@@ -29,7 +29,7 @@ namespace GAPInsuranceAPI.Repository
             return _context.GetAll();
         }
 
-        public CoverageType GetById(int id)
+        public IEnumerable<CoverageType> GetById(int id)
         {
             throw new NotImplementedException();
         }

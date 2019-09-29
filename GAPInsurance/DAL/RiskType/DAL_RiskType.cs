@@ -43,7 +43,7 @@ namespace DAL
             }
         }
 
-        public RiskType GetbyId(int Id)
+        public List<RiskType> GetbyId(int Id)
         {
             throw new NotImplementedException();
         }

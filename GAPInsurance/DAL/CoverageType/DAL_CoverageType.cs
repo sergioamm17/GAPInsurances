@@ -43,7 +43,7 @@ namespace DAL
             }
         }
 
-        public CoverageType GetbyId(int Id)
+        public List<CoverageType> GetbyId(int Id)
         {
             throw new NotImplementedException();
         }

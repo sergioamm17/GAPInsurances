@@ -84,7 +84,7 @@ namespace DAL
             }
         }
 
-        public Insurance GetbyId(int Id)
+        public List<Insurance> GetbyId(int Id)
         {
             try
             {
@@ -93,9 +93,9 @@ namespace DAL
                 {
                     var queryParameters = new DynamicParameters();
                     queryParameters.Add("@InsuranceID", Id);
-                    data = db.Query<Insurance>("EXEC [Logistic].[SP_CustomerGetById]", queryParameters, commandType: CommandType.StoredProcedure).ToList();
+                    data = db.Query<Insurance>("EXEC [dbo].[SP_CustomerGetById]", queryParameters, commandType: CommandType.StoredProcedure).ToList();
                 }
-                return data.FirstOrDefault();
+                return data;
             }
             catch (Exception)
             {

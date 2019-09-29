@@ -34,6 +34,7 @@ namespace GAPInsuranceAPI
             services.AddScoped(typeof(IRepository<Insurance>), typeof(InsuranceRepository));
             services.AddScoped(typeof(IRepository<RiskType>), typeof(RiskTypeRepository));
             services.AddScoped(typeof(IRepository<CoverageType>), typeof(CoverageTypeRepository));
+            services.AddScoped(typeof(IRepository<InsuranceCoverageType>), typeof(InsuranceCoverageTypeRepository));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

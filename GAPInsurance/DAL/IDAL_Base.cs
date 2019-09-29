@@ -8,7 +8,7 @@ namespace DAL
     {
         List<T> GetAll();
 
-        T GetbyId(int Id);
+        List<T> GetbyId(int Id);
 
         T UpdateEntity(T Entity);
 

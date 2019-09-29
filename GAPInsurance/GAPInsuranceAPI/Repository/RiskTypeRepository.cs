@@ -29,7 +29,7 @@ namespace GAPInsuranceAPI.Repository
             return _context.GetAll();
         }
 
-        public RiskType GetById(int id)
+        public IEnumerable<RiskType> GetById(int id)
         {
             throw new NotImplementedException();
         }
