@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DAL;
+using Entities;
+using GAPInsuranceAPI.Interface;
+using GAPInsuranceAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +30,10 @@ namespace GAPInsuranceAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.Configure<ConnectionConfig>(Configuration.GetSection("ConnectionStrings"));
+            services.AddScoped(typeof(IRepository<Insurance>), typeof(InsuranceRepository));
+            services.AddScoped(typeof(IRepository<RiskType>), typeof(RiskTypeRepository));
+            services.AddScoped(typeof(IRepository<CoverageType>), typeof(CoverageTypeRepository));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

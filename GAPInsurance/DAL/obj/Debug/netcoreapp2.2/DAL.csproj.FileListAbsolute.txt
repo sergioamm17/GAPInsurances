@@ -1,0 +1,14 @@
+C:\Programacion\GAPTest\GAPInsurance\DAL\bin\Debug\netcoreapp2.2\Entities.dll
+C:\Programacion\GAPTest\GAPInsurance\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+C:\Programacion\GAPTest\GAPInsurance\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+C:\Programacion\GAPTest\GAPInsurance\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+C:\Programacion\GAPTest\GAPInsurance\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+C:\Programacion\GAPTest\GAPInsurance\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+C:\Programacion\GAPTest\GAPInsurance\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+C:\Programacion\GAPTest\GAPInsurance\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+C:\Programacion\GAPTest\GAPInsurance\DAL\bin\Debug\netcoreapp2.2\System.Data.SqlClient.dll
+C:\Programacion\GAPTest\GAPInsurance\DAL\bin\Debug\netcoreapp2.2\Entities.pdb
+C:\Programacion\GAPTest\GAPInsurance\DAL\bin\Debug\netcoreapp2.2\System.Data.SqlClient.xml
+C:\Programacion\GAPTest\GAPInsurance\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
+C:\Programacion\GAPTest\GAPInsurance\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+C:\Programacion\GAPTest\GAPInsurance\DAL\obj\Debug\netcoreapp2.2\DAL.pdb

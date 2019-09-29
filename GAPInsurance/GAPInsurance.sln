@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAPInsuranceSite", "GAPInsu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAPInsuranceAPI", "GAPInsuranceAPI\GAPInsuranceAPI.csproj", "{45B5DF2F-B6E3-4F29-B1D2-D228C83F7E5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{5862EBD9-5353-4C14-9F1B-A8D81B6D0816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{1D37E184-2E11-4B2A-804A-ED62FEBA0C60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{45B5DF2F-B6E3-4F29-B1D2-D228C83F7E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45B5DF2F-B6E3-4F29-B1D2-D228C83F7E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45B5DF2F-B6E3-4F29-B1D2-D228C83F7E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5862EBD9-5353-4C14-9F1B-A8D81B6D0816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5862EBD9-5353-4C14-9F1B-A8D81B6D0816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5862EBD9-5353-4C14-9F1B-A8D81B6D0816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5862EBD9-5353-4C14-9F1B-A8D81B6D0816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D37E184-2E11-4B2A-804A-ED62FEBA0C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D37E184-2E11-4B2A-804A-ED62FEBA0C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D37E184-2E11-4B2A-804A-ED62FEBA0C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D37E184-2E11-4B2A-804A-ED62FEBA0C60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

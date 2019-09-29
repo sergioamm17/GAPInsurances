@@ -12,3 +12,8 @@ C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAP
 C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.RazorTargetAssemblyInfo.cache
 C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.dll
 C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.pdb
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\bin\Debug\netcoreapp2.2\DAL.dll
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\bin\Debug\netcoreapp2.2\Entities.dll
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\bin\Debug\netcoreapp2.2\DAL.pdb
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\bin\Debug\netcoreapp2.2\Entities.pdb
+C:\Programacion\GAPTest\GAPInsurance\GAPInsuranceAPI\obj\Debug\netcoreapp2.2\GAPInsuranceAPI.csproj.CopyComplete
