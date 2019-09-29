@@ -19,6 +19,7 @@ namespace GAPInsuranceAPI.Repository
             var connectionString = connection.InsuranceApp;
             _context = new DAL_Insurance(connectionString);
         }
+
         public bool Delete(int id)
         {
             return _context.DeleteEntity(id);

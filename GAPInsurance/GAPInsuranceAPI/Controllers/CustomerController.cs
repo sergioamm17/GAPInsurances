@@ -14,19 +14,20 @@ namespace GAPInsuranceAPI.Controllers
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
-    public class CoverageTypeController : ControllerBase
+    public class CustomerController : ControllerBase
     {
-        private IRepository<CoverageType> repository = null;
+        private IRepository<Customer> repository = null;
 
-        public CoverageTypeController(IRepository<CoverageType> repository)
+        public CustomerController(IRepository<Customer> repository)
         {
             this.repository = repository;
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<CoverageType>> Get()
+        public ActionResult<IEnumerable<Customer>> Get()
         {
             return Ok(this.repository.GetAll());
         }
+
     }
 }

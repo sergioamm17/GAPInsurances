@@ -41,6 +41,8 @@ namespace GAPInsuranceAPI
             services.AddScoped(typeof(IRepository<RiskType>), typeof(RiskTypeRepository));
             services.AddScoped(typeof(IRepository<CoverageType>), typeof(CoverageTypeRepository));
             services.AddScoped(typeof(IRepository<InsuranceCoverageType>), typeof(InsuranceCoverageTypeRepository));
+            services.AddScoped(typeof(IRepository<Customer>), typeof(CustomerRepository));
+            services.AddScoped(typeof(IRepository<CustomerInsurance>), typeof(CustomerInsuranceRepository));
             services.AddScoped<IUserService, UserService>();
 
             var settingsConfig = Configuration.GetSection("SettingsConfig");
