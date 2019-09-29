@@ -10,8 +10,6 @@ namespace Entities
 
         public string Description { get; set; }
 
-        public int CoverageTypeId { get; set; }
-
         public decimal CoveragePercentage { get; set; }
 
         public DateTime StartDate { get; set; }

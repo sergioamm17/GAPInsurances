@@ -26,7 +26,6 @@ namespace DAL
                     queryParameters.Add("@InsuranceID", Entity.InsuranceID);
                     queryParameters.Add("@Name", Entity.Name);
                     queryParameters.Add("@Description", Entity.Description);
-                    queryParameters.Add("@CoverageTypeId", Entity.CoverageTypeId);
                     queryParameters.Add("@CoveragePercentage", Entity.CoveragePercentage);
                     queryParameters.Add("@StartDate", Entity.StartDate);
                     queryParameters.Add("@CoverageTime", Entity.CoverageTime);
@@ -114,7 +113,6 @@ namespace DAL
                     queryParameters.Add("@InsuranceID", Entity.InsuranceID);
                     queryParameters.Add("@Name", Entity.Name);
                     queryParameters.Add("@Description", Entity.Description);
-                    queryParameters.Add("@CoverageTypeId", Entity.CoverageTypeId);
                     queryParameters.Add("@CoveragePercentage", Entity.CoveragePercentage);
                     queryParameters.Add("@StartDate", Entity.StartDate);
                     queryParameters.Add("@CoverageTime", Entity.CoverageTime);
