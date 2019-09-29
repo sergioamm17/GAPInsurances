@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using Entities;
 using GAPInsuranceAPI.Interface;
 using GAPInsuranceAPI.Repository;
+using GAPInsuranceAPI.Service;
+using GAPInsuranceAPI.Utils;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,6 +18,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 
 namespace GAPInsuranceAPI
 {
@@ -31,10 +36,33 @@ namespace GAPInsuranceAPI
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.Configure<ConnectionConfig>(Configuration.GetSection("ConnectionStrings"));
+            services.Configure<SettingsConfig>(Configuration.GetSection("SettingsConfig"));
             services.AddScoped(typeof(IRepository<Insurance>), typeof(InsuranceRepository));
             services.AddScoped(typeof(IRepository<RiskType>), typeof(RiskTypeRepository));
             services.AddScoped(typeof(IRepository<CoverageType>), typeof(CoverageTypeRepository));
             services.AddScoped(typeof(IRepository<InsuranceCoverageType>), typeof(InsuranceCoverageTypeRepository));
+            services.AddScoped<IUserService, UserService>();
+
+            var settingsConfig = Configuration.GetSection("SettingsConfig");
+            var settings = settingsConfig.Get<SettingsConfig>();
+            var key = Encoding.ASCII.GetBytes(settings.Secret);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +80,13 @@ namespace GAPInsuranceAPI
 
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            app.UseAuthentication();
         }
     }
 }
