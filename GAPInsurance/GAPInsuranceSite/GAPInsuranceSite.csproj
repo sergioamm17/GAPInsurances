@@ -25,12 +25,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\models\Insurance.ts" />
     <None Remove="ClientApp\src\app\models\User.ts" />
     <None Remove="ClientApp\src\app\services\authentication.service.ts" />
     <None Remove="ClientApp\src\app\utils\auth.guard.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\models\Insurance.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\models\User.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\services\authentication.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\utils\auth.guard.ts" />

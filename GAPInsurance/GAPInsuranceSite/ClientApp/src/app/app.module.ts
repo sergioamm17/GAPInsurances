@@ -10,13 +10,15 @@ import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './utils/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { InsuranceListComponent } from './insurance-list/insurance-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    InsuranceListComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, canActivate: [AuthGuard] },
       { path: 'login', component: LoginComponent },
+      { path: 'insurance', component: InsuranceListComponent },
       { path: '**', redirectTo: '' }
     ])
   ],
