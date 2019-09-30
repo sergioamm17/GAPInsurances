@@ -48,27 +48,17 @@ export class LoginComponent implements OnInit {
     }
 
     this.loading = true;
-
-    try {
-      //this.router.navigate(['home']);
-
       this.authenticationService.login(this.f.username.value, this.f.password.value)
         .pipe(first())
         .subscribe(
           data => {
             this.router.navigate([this.returnUrl]);
-            console.log('exioso')
+            
           },
           error => {
             console.log(error)
             this.loading = false;
           });
-
-
-    } catch (e) {
-      console.log(e);
-    }
-    
 
     this.loading = false;
   }
