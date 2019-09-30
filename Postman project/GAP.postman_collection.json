@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "3341c34d-5e96-4209-97d0-415b44265214",
+		"name": "GAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GAPInsurance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ 'Username': 'monge', 'Password': '123'}"
+				},
+				"url": {
+					"raw": "https://localhost:44364/api/security/authenticate",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"security",
+						"authenticate"
+					]
+				},
+				"description": "Pruebas para test de GAP"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/api/risktype",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1Njk3NzUyNTcsImV4cCI6MTU3MDM4MDA1NywiaWF0IjoxNTY5Nzc1MjU3fQ.hbSHSETnCAM8a-C4UvF8ESUGAckPB1M1l0ZXz-LupSo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44364/api/risktype",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"risktype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/api/insurance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1Njk4NDA5MzUsImV4cCI6MTU3MDQ0NTczNSwiaWF0IjoxNTY5ODQwOTM1fQ.eXiwwIhVWXMSy3J3jmM87qZKqAYJHckXMn7NTvtaB0E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44364/api/insurance",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"insurance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/api/insurance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1Njk4NDA5MzUsImV4cCI6MTU3MDQ0NTczNSwiaWF0IjoxNTY5ODQwOTM1fQ.eXiwwIhVWXMSy3J3jmM87qZKqAYJHckXMn7NTvtaB0E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t'Name': 'Prueba Seguro 4',\n\t'Description': 'Prueba Seguro 4',\n\t'CoveragePercentage': 50,\n\t'StartDate': '2019-09-30',\n\t'CoverageTime': 12,\n\t'Amount': 45000,\n\t'RiskTypeID': 4,\n\t'State': true\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44364/api/insurance",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"insurance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
