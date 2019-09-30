@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 
 import { User } from '../models/User';
 
-const apiUrl: string = "https://localhost:44364";
+import { environment } from '../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class AuthenticationService {
@@ -32,7 +32,7 @@ export class AuthenticationService {
       })
     };
 
-    return this.http.post<User>(`${apiUrl}/api/security/authenticate`, { username, password }, httpOptions)
+    return this.http.post<User>(`${environment.apiUrl}/api/security/authenticate`, { username, password }, httpOptions)
       .pipe(map(user => {
         localStorage.setItem('currentUser', JSON.stringify(user));
         this.currentUserSubject.next(user);

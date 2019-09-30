@@ -23,7 +23,7 @@ namespace DAL
                 using (IDbConnection db = new SqlConnection(_connectionString))
                 {
                     var queryParameters = new DynamicParameters();
-                    queryParameters.Add("@InsuranceID", Entity.InsuranceID);
+                    queryParameters.Add("@InsuranceID", Entity.InsuranceID, direction: ParameterDirection.Output);
                     queryParameters.Add("@Name", Entity.Name);
                     queryParameters.Add("@Description", Entity.Description);
                     queryParameters.Add("@CoveragePercentage", Entity.CoveragePercentage);

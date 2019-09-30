@@ -7,7 +7,7 @@ import { AuthenticationService } from '../services/authentication.service';
 
 import { User } from '../models/User';
 
-const apiUrl = "https://localhost:44364";
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +29,7 @@ export class ApiService {
       })
     };
 
-    return this.http.get<Insurance[]>(`${apiUrl}/api/insurance/`, httpOptions)
+    return this.http.get<Insurance[]>(`${environment.apiUrl}/api/insurance/`, httpOptions)
       .pipe(
         tap(insurances => { console.log('fetched insurances'); console.log(insurances); }),
         catchError(this.handleError('getInsurances', []))

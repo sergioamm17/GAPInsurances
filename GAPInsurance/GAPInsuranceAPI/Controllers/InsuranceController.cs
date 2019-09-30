@@ -41,6 +41,12 @@ namespace GAPInsuranceAPI.Controllers
         [HttpPost]
         public ActionResult<Insurance> Post([FromBody] Insurance value)
         {
+            if (value.RiskTypeID == (int)EnumRiskType.Alto && value.CoveragePercentage > Constants.MaxPercentageHighRisk)
+            {
+                
+                return BadRequest($"Para una poliza de alto riesgo el porcentaje de cobertra no debe superar el {Constants.MaxPercentageHighRisk}%" );
+            }
+
             return Ok(this.repository.Insert(value));
         }
 
