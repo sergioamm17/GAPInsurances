@@ -34,6 +34,15 @@ namespace GAPInsuranceAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder
+                    .SetIsOriginAllowed((host) => true)
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.Configure<ConnectionConfig>(Configuration.GetSection("ConnectionStrings"));
             services.Configure<SettingsConfig>(Configuration.GetSection("SettingsConfig"));
@@ -83,12 +92,10 @@ namespace GAPInsuranceAPI
             app.UseHttpsRedirection();
             app.UseMvc();
 
-            app.UseCors(x => x
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader());
+            app.UseCors("CorsPolicy");
 
             app.UseAuthentication();
+
         }
     }
 }
