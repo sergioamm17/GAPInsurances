@@ -78,7 +78,7 @@ namespace DAL
                 }
                 return data;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw;
             }

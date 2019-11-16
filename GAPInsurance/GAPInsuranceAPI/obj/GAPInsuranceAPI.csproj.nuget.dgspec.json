@@ -1,40 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programacion\\GAPTest\\GAPInsurance\\GAPInsuranceAPI\\GAPInsuranceAPI.csproj": {}
+    "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/GAPInsuranceAPI/GAPInsuranceAPI.csproj": {}
   },
   "projects": {
-    "C:\\Programacion\\GAPTest\\GAPInsurance\\DAL\\DAL.csproj": {
+    "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/DAL/DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programacion\\GAPTest\\GAPInsurance\\DAL\\DAL.csproj",
+        "projectUniqueName": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/DAL/DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Programacion\\GAPTest\\GAPInsurance\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\mongems\\.nuget\\packages\\",
-        "outputPath": "C:\\Programacion\\GAPTest\\GAPInsurance\\DAL\\obj\\",
+        "projectPath": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/DAL/DAL.csproj",
+        "packagesPath": "/Users/checho/.nuget/packages/",
+        "outputPath": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/DAL/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mongems\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/checho/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Public\\Documents\\Infragistics\\NuGet\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Programacion\\GAPTest\\GAPInsurance\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Programacion\\GAPTest\\GAPInsurance\\Entities\\Entities.csproj"
+              "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/Entities/Entities.csproj": {
+                "projectPath": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/Entities/Entities.csproj"
               }
             }
           }
@@ -57,40 +49,42 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Programacion\\GAPTest\\GAPInsurance\\Entities\\Entities.csproj": {
+    "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programacion\\GAPTest\\GAPInsurance\\Entities\\Entities.csproj",
+        "projectUniqueName": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Programacion\\GAPTest\\GAPInsurance\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\mongems\\.nuget\\packages\\",
-        "outputPath": "C:\\Programacion\\GAPTest\\GAPInsurance\\Entities\\obj\\",
+        "projectPath": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/Entities/Entities.csproj",
+        "packagesPath": "/Users/checho/.nuget/packages/",
+        "outputPath": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/Entities/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mongems\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/checho/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Public\\Documents\\Infragistics\\NuGet\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,47 +109,45 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Programacion\\GAPTest\\GAPInsurance\\GAPInsuranceAPI\\GAPInsuranceAPI.csproj": {
+    "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/GAPInsuranceAPI/GAPInsuranceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programacion\\GAPTest\\GAPInsurance\\GAPInsuranceAPI\\GAPInsuranceAPI.csproj",
+        "projectUniqueName": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/GAPInsuranceAPI/GAPInsuranceAPI.csproj",
         "projectName": "GAPInsuranceAPI",
-        "projectPath": "C:\\Programacion\\GAPTest\\GAPInsurance\\GAPInsuranceAPI\\GAPInsuranceAPI.csproj",
-        "packagesPath": "C:\\Users\\mongems\\.nuget\\packages\\",
-        "outputPath": "C:\\Programacion\\GAPTest\\GAPInsurance\\GAPInsuranceAPI\\obj\\",
+        "projectPath": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/GAPInsuranceAPI/GAPInsuranceAPI.csproj",
+        "packagesPath": "/Users/checho/.nuget/packages/",
+        "outputPath": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/GAPInsuranceAPI/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mongems\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/checho/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Public\\Documents\\Infragistics\\NuGet\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Programacion\\GAPTest\\GAPInsurance\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Programacion\\GAPTest\\GAPInsurance\\DAL\\DAL.csproj"
+              "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/DAL/DAL.csproj": {
+                "projectPath": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/DAL/DAL.csproj"
               },
-              "C:\\Programacion\\GAPTest\\GAPInsurance\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Programacion\\GAPTest\\GAPInsurance\\Entities\\Entities.csproj"
+              "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/Entities/Entities.csproj": {
+                "projectPath": "/Users/checho/Documents/Development/dotnetcore/GAPInsurances/GAPInsurance/Entities/Entities.csproj"
               }
             }
           }
@@ -192,10 +184,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
